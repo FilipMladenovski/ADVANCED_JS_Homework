@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1>Please choose your filter data:</h1>
+
+    <label for="type-input">By Type:</label>
+    <select id="type-input"></select>
+
+    <label for="brand-input">By Brand:</label>
+    <select id="brand-input"></select>
+
+    <label for="model-input">By Model:</label>
+    <input type="text" id="model-input">
+
+    <label for="doors-input">By Doors:</label>
+    <input type="number" id="doors-input">
+
+    <label for="gas-type-input">By Gas Type:</label>
+    <select id="gas-type-input"></select>
+
+    <label for="color-input">By Color:</label>
+    <input type="text" id="color-input">
+
+    <label for="new-old-input">By New/Old:</label>
+    <input type="radio" id="new-input" name="new-old" value="new">
+    <label for="new-input">New</label>
+    <input type="radio" id="old-input" name="new-old" value="old">
+    <label for="old-input">Old</label>
+
+    <label for="horsepower-input">By Horsepower:</label>
+    <input type="range" id="horsepower-input" min="0" max="500" step="10">
+    <output for="horsepower-input" id="horsepower-output">0</output> HP
+    <br>
+
+    <button id="applyFiltersBtn">Apply Filters</button>
+    <button id="resetFiltersBtn">Reset Filters</button>
+
+    <table id="carsTable">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Doors</th>
+                <th>Gas Type</th>
+                <th>Color</th>
+                <th>New/Old</th>
+                <th>Horsepower</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
