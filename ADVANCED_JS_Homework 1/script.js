@@ -1,6 +1,6 @@
 let allCarsData;
 
-fetch("https://raw.githubusercontent.com/FilipMladenovski/ADVANCED_JS_Homework/main/ADVANCED_JS_Homework%201/cars.json")
+fetch("https://raw.githubusercontent.com/FilipMladenovski/ADVANCED_JS_Homework/main/ADVANCED_JS_Homework/cars.json")
     .then(function (res) {
         return res.json();
     })
